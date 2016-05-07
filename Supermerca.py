@@ -57,11 +57,11 @@ def carrito():
 				print " "
 				# VALIDACION DEL PRODUCTO SI EXISTE O NO..................................
 				for elemento in prod_bodega:
-					if elemento==nompro:
+					if proe_bodega[lemento][0]==nompro:
 						cantidad=input("Cantidad Unitaria a comprar: ")
 						print " "
 						# ASIGNACION DE VARIABLES (CANTIDAD DE PRODUCTO POR PRECIO)
-						sb=cantidad*prod_bodega[elemento]
+						sb=cantidad*prod_bodega[elemento][1]
 						# ASIGNACION DE VARIABLES (CONTADOR MAS SB), VARIABLE GLOBAL
 						subtotal = subtotal + sb
 						print "*****%s Cant: %s Subtotal: Q.%s "%(elemento, cantidad,subtotal )
